@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telkom Learn</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="content">
+        <div class="header">
+            <div class="start">
+                <div>
+                    <button class="openbtn" onclick="openNav()">
+                        <i class="fas fa-bars icon"></i>
+                    </button>
+                </div>
+
+                <div id="mySidepanel" class="sidepanel">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#" class="sideTags"><i class="fas fa-home icon" style="color: gray"></i>Home</a>
+                    <a href="#" class="sideTags"><i class="fas fa-tachometer-alt icon" style="color: gray"></i>Dashboard</a>                      Dashboard</a>
+                    <a href="#" class="sideTags"><i class="fas fa-book icon" style="color: gray"></i>My Courses</a>
+                    <a href="#" class="sideTags"><i class="fas fa-shopping-cart icon" style="color: gray"></i>Purchases</a>
+                    <a href="#" class="sideTags"><i class="fas fa-trophy icon"style="color: gray"></i>Leaderboards</a>
+                    <a href="#" class="sideTags"><i class="fas fa-info-circle icon" style="color: gray"></i>About Us</a>
+                    <a href="#" class="sideTags"><i class="fas fa-envelope icon" style="color: gray"></i>Contact Us</a>
+                    <a href="#" class="sideTags"><i class="fas fa-handshake icon" style="color: grey;"></i>Referrals</a>
+
+                    <a href="#" class="sideTags"><i class="fas fa-gear icon" style="color: gray"></i>Settings</a>
+                    <a href="#" class="sideTags"><i class="fas fa-sign-out-alt icon" style="color: gray"></i>Log Out</a>
+                </div>
+
+                <div><img src="/images/logo.png" alt="Logo" class="logo-icon"></div>
+            </div>
+
+            <div class="centre">
+                <div><input type="text" class="search-input" placeholder="Search..."></div>
+                <div><button class="search-button"><i class="fas fa-search icon"></i></button></div>
+                <div><button class="speech"><i class="fas fa-microphone icon"></i></button></div>
+            </div>
+
+            <div class="end">
+                <div><button class="notification-button"><i class="fas fa-bell icon"></i></button></div>
+                <div><button class="profile-button"><i class="fas fa-user-circle icon"></i></button></div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="form">
+                <div class="form-header">
+                    <div><img src="/images/logo.png" alt="Logo" class="logo-icon"></div>
+                    <h4 style="font-style: italic; font-weight: 400;">"Unlimit your learning"</h4>
+                </div>
+
+                <div class="form-inputs">
+                    <h3 class="form-heading">Username</h3>
+                    <input type="text" placeholder="Enter your username" class="inputs">
+                    <h3 class="form-heading">Password</h3>
+                    <input type="password" placeholder="Enter password" class="inputs">
+                    <div class="form-buttons">
+                        <div>
+                            <button class="login-button" id="loginButton">LOGIN</button>
+                            <button class="sign-button" id="signUpButton">SIGN UP</button>
+                        </div> 
+                        <div><button style="background-color: transparent;border-style: none; color: blue;"class="forgot-pass" id="forgotPassButton"><u>Forgot Your Password?</u></button></div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-col-1"></div>
+                <div class="footer-col-2"></div>
+                <div class="footer-col-3"></div>
+                <div class="footer-col-4"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for opening and closing the sidepanel -->
+    <script>
+        function openNav() {
+            document.getElementById("mySidepanel").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0";
+        }
+    </script>
+</body>
+</html>
