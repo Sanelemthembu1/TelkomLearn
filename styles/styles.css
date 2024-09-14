@@ -290,3 +290,25 @@ margin-bottom: 0%;
 .continue-button:hover{
     opacity: 0.8;
 }
+
+/*Course Suggestions*/
+.dashboard{
+    margin: auto;
+    width: 80%;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 5px 5px 5px rgb(202, 197, 197);
+    background-color: white;
+    padding: 10px;
+}
+.Suggested-courses-class{
+
+    display: block;
+    text-align: center;
+    margin-bottom: 2%;
+    color: rgb(4, 154, 248);
+    font-size: 20px;
+
+
+}
